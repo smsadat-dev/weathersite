@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: weather_backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+    # Add env_file: .env if needed
+
+  frontend:
+    build: ./frontend
+    container_name: weather_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
