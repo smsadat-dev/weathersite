@@ -15,3 +15,7 @@ Minimal Weather Forecast Web App. Lightweight, fully containerized weather web a
     ☀️ See UV Index, humidity, and wind speed
     📅 Get a 7-day forecast
     🔌 Fully decoupled frontend/backend with secure CORS setup
+
+📜 License
+
+    MIT – do whatever you want, just give credit.
